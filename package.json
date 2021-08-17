@@ -4,11 +4,15 @@
   "description": "Amar's portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "start": "npm run lite"
   },
   "author": "a3nath",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^6.0.1"
+    "lite-server": "^2.6.1",
+    "node-sass": "^6.0.1",
+    "scss": "^0.2.4"
   }
 }
