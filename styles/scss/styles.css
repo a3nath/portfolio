@@ -308,6 +308,13 @@ body {
           box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
+:root {
+  --width: 300px;
+  --x-speed: 13s;
+  --y-speed: 7s;
+  --transition-speed: 2.2s;
+}
+
 section.wrapper {
   margin: 60px auto;
 }
@@ -369,8 +376,68 @@ section div {
   color: #1FB31F;
 }
 
-.cover {
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+.wrap-1 {
+  -webkit-animation: x var(--x-speed) linear infinite alternate;
+          animation: x var(--x-speed) linear infinite alternate;
+}
+
+.wrap-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-animation: x2 var(--x-speed) linear infinite alternate;
+          animation: x2 var(--x-speed) linear infinite alternate;
+}
+
+.svg {
+  -webkit-animation: y var(--y-speed) linear infinite alternate;
+          animation: y var(--y-speed) linear infinite alternate;
+  width: var(--width);
+  height: var(--width);
+  -webkit-transition: var(--transition-speed) linear;
+  transition: var(--transition-speed) linear;
+}
+
+@-webkit-keyframes x {
+  100% {
+    -webkit-transform: translateX(calc(-100vw + var(--width)));
+            transform: translateX(calc(-100vw + var(--width)));
+  }
+}
+
+@keyframes x {
+  100% {
+    -webkit-transform: translateX(calc(-100vw + var(--width)));
+            transform: translateX(calc(-100vw + var(--width)));
+  }
+}
+
+@-webkit-keyframes x2 {
+  100% {
+    -webkit-transform: translateX(calc(-100vw + var(--width)));
+            transform: translateX(calc(-100vw + var(--width)));
+  }
+}
+
+@keyframes x2 {
+  100% {
+    -webkit-transform: translateX(calc(-100vw + var(--width)));
+            transform: translateX(calc(-100vw + var(--width)));
+  }
+}
+
+@-webkit-keyframes y {
+  100% {
+    -webkit-transform: translateY(calc(100vh - var(--width)));
+            transform: translateY(calc(100vh - var(--width)));
+  }
+}
+
+@keyframes y {
+  100% {
+    -webkit-transform: translateY(calc(100vh - var(--width)));
+            transform: translateY(calc(100vh - var(--width)));
+  }
 }
 
 footer {
