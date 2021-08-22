@@ -1,5 +1,5 @@
 :root {
-    --width: 300px;
+    --width: 50px;
     --x-speed: 13s;
     --y-speed: 7s;
     --transition-speed: 2.2s;
@@ -67,23 +67,27 @@ section {
     }
 }
 
-// .cover{
-//     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-// }
+.cover{
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    height: 800px;
+}
 
 
 $green: #7ceaa4;
 $purple: #3b3d54;
 
-$size : 200px;
+$size : 50px;
 
-.wrap-1{
+.svg-wrap{
+    width: var(--width)
+}
+
+.wrap-1, .wrap-3, .wrap-5, .wrap-7{
     animation: x var(--x-speed) linear infinite alternate;
 }
 
 .wrap-2 {
     position: absolute;
-    top:0;
     right:0;
     animation: x2 var(--x-speed) linear infinite alternate;
 }
@@ -91,10 +95,6 @@ $size : 200px;
 
 
 .svg{
-	// stroke:$green;
-	// position:absolute;
-	// bottom: -100vh;
-    // transform-style: preserve-3d;
     animation: y var(--y-speed) linear infinite alternate;
     width: var(--width);
     height: var(--width);
@@ -103,7 +103,7 @@ $size : 200px;
 
 @keyframes x {
     100% {
-        transform: translateX(calc(-100vw + var(--width)));
+        transform: translateX(calc(100vw - var(--width)));
     }
   }
   @keyframes x2 {
@@ -113,7 +113,7 @@ $size : 200px;
   }
   @keyframes y {
     100% {
-        transform: translateY(calc(100vh - var(--width)));
+        transform: translateY(calc(500px - var(--width)));
     }
   }
 
