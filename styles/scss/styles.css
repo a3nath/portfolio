@@ -379,6 +379,7 @@ section div {
 .cover {
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   height: 800px;
+  position: relative;
 }
 
 .svg-wrap {
@@ -386,15 +387,54 @@ section div {
 }
 
 .wrap-1, .wrap-3, .wrap-5, .wrap-7 {
-  -webkit-animation: x var(--x-speed) linear infinite alternate;
-          animation: x var(--x-speed) linear infinite alternate;
+  -webkit-animation: x1 var(--x-speed) linear infinite alternate;
+          animation: x1 var(--x-speed) linear infinite alternate;
+}
+
+.wrap-2, .wrap-4, .wrap-6, .wrap-6, .wrap-8 {
+  -webkit-animation: x2 var(--x-speed) linear infinite alternate;
+          animation: x2 var(--x-speed) linear infinite alternate;
+  position: absolute;
+}
+
+.wrap-1 {
+  top: 0;
+  left: 0;
 }
 
 .wrap-2 {
-  position: absolute;
+  top: 0;
   right: 0;
-  -webkit-animation: x2 var(--x-speed) linear infinite alternate;
-          animation: x2 var(--x-speed) linear infinite alternate;
+}
+
+.wrap-3 {
+  top: 20px;
+  left: 20px;
+}
+
+.wrap-4 {
+  top: 20px;
+  right: 20px;
+}
+
+.wrap-5 {
+  top: 0;
+  left: 40px;
+}
+
+.wrap-6 {
+  top: 40px;
+  right: 40px;
+}
+
+.wrap-7 {
+  top: 0;
+  left: 0px;
+}
+
+.wrap-8 {
+  top: 60px;
+  right: 60px;
 }
 
 .svg {
@@ -402,18 +442,16 @@ section div {
           animation: y var(--y-speed) linear infinite alternate;
   width: var(--width);
   height: var(--width);
-  -webkit-transition: var(--transition-speed) linear;
-  transition: var(--transition-speed) linear;
 }
 
-@-webkit-keyframes x {
+@-webkit-keyframes x1 {
   100% {
     -webkit-transform: translateX(calc(100vw - var(--width)));
             transform: translateX(calc(100vw - var(--width)));
   }
 }
 
-@keyframes x {
+@keyframes x1 {
   100% {
     -webkit-transform: translateX(calc(100vw - var(--width)));
             transform: translateX(calc(100vw - var(--width)));
@@ -421,16 +459,24 @@ section div {
 }
 
 @-webkit-keyframes x2 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
   100% {
-    -webkit-transform: translateX(calc(-100vw + var(--width)));
-            transform: translateX(calc(-100vw + var(--width)));
+    -webkit-transform: translateX(calc(-90vw + var(--width)));
+            transform: translateX(calc(-90vw + var(--width)));
   }
 }
 
 @keyframes x2 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
   100% {
-    -webkit-transform: translateX(calc(-100vw + var(--width)));
-            transform: translateX(calc(-100vw + var(--width)));
+    -webkit-transform: translateX(calc(-90vw + var(--width)));
+            transform: translateX(calc(-90vw + var(--width)));
   }
 }
 
