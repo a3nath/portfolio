@@ -313,6 +313,7 @@ body {
   --x-speed: 13s;
   --y-speed: 7s;
   --transition-speed: 2.2s;
+  --animation-left: 800px;
 }
 
 section.wrapper {
@@ -480,15 +481,15 @@ section div {
 
 @-webkit-keyframes y {
   100% {
-    -webkit-transform: translateY(calc(500px - var(--width)));
-            transform: translateY(calc(500px - var(--width)));
+    -webkit-transform: translateY(calc(700px - var(--width)));
+            transform: translateY(calc(700px - var(--width)));
   }
 }
 
 @keyframes y {
   100% {
-    -webkit-transform: translateY(calc(500px - var(--width)));
-            transform: translateY(calc(500px - var(--width)));
+    -webkit-transform: translateY(calc(700px - var(--width)));
+            transform: translateY(calc(700px - var(--width)));
   }
 }
 
