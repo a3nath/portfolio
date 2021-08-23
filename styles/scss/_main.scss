@@ -3,7 +3,8 @@
     --x-speed: 13s;
     --y-speed: 7s;
     --transition-speed: 2.2s;
-  }
+    --animation-left: 800px;
+}
 
 section {
     &.wrapper {
@@ -74,17 +75,24 @@ section {
 }
 
 
+
+
 $green: #7ceaa4;
 $purple: #3b3d54;
 
 
 
 .svg-wrap{
-    width: var(--width)
+    width: var(--width);
 }
 
 .wrap-1, .wrap-3, .wrap-5, .wrap-7{
     animation: x1 var(--x-speed) linear infinite alternate;
+    position: absolute;
+}
+
+.wrap-3{
+    animation: 20s
 }
 
 .wrap-2, .wrap-4, .wrap-6, .wrap-6, .wrap-8 {
@@ -93,8 +101,8 @@ $purple: #3b3d54;
 }
 
 .wrap-1{
- top: 0;
- left:0
+  top: 0;
+  left:0;
 }
 .wrap-2{
     top: 0;
@@ -109,7 +117,7 @@ $purple: #3b3d54;
     right:20px
 }
 .wrap-5{
-    top: 0;
+    top: 40px;
     left:40px;
 }
 .wrap-6{
@@ -117,8 +125,8 @@ $purple: #3b3d54;
     right:40px;
 }
 .wrap-7{
-    top:0;
-    left:0px;
+    top:60px;
+    left:60px;
 }
 .wrap-8{
     top: 60px;
@@ -137,9 +145,9 @@ $purple: #3b3d54;
     }
   }
   @keyframes x2 {
-    0% {
-        transform: translateX(0);
-    };
+    // 0% {
+    //     transform: translateX(0);
+    // };
     100% {
       transform: translateX(calc(-90vw + var(--width)));
     }

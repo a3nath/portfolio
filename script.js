@@ -142,3 +142,21 @@
 //   render(last);
 //   changeSpeed = e.target.value;
 // })
+
+let bounceLeft = Math.min(Math.max(Math.random() * 10,2), 5);
+
+console.log(bounceLeft)
+
+let svgs = document.querySelectorAll('.svg')
+
+svgs.forEach(svg => svg.style.setProperty('--y-speed', Math.min(Math.max(Math.random() * 10,2), 5) +'s'))
+
+console.log(svgs)
+
+
+
+// let wrapLeft = document.querySelector('.svg-7')
+
+// console.log(wrapLeft)
+
+// wrapLeft.style.setProperty('--y-speed', bounceLeft +'s');

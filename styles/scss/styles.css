@@ -389,6 +389,12 @@ section div {
 .wrap-1, .wrap-3, .wrap-5, .wrap-7 {
   -webkit-animation: x1 var(--x-speed) linear infinite alternate;
           animation: x1 var(--x-speed) linear infinite alternate;
+  position: absolute;
+}
+
+.wrap-3 {
+  -webkit-animation: 20s;
+          animation: 20s;
 }
 
 .wrap-2, .wrap-4, .wrap-6, .wrap-6, .wrap-8 {
@@ -418,7 +424,7 @@ section div {
 }
 
 .wrap-5 {
-  top: 0;
+  top: 40px;
   left: 40px;
 }
 
@@ -428,8 +434,8 @@ section div {
 }
 
 .wrap-7 {
-  top: 0;
-  left: 0px;
+  top: 60px;
+  left: 60px;
 }
 
 .wrap-8 {
@@ -459,10 +465,6 @@ section div {
 }
 
 @-webkit-keyframes x2 {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
   100% {
     -webkit-transform: translateX(calc(-90vw + var(--width)));
             transform: translateX(calc(-90vw + var(--width)));
@@ -470,10 +472,6 @@ section div {
 }
 
 @keyframes x2 {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
   100% {
     -webkit-transform: translateX(calc(-90vw + var(--width)));
             transform: translateX(calc(-90vw + var(--width)));
