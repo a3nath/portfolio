@@ -309,7 +309,7 @@ body {
 }
 
 :root {
-  --width: 50px;
+  --width: 60px;
   --x-speed: 13s;
   --y-speed: 7s;
   --transition-speed: 2.2s;
@@ -386,8 +386,6 @@ section div {
 
 .svg-wrap {
   width: var(--width);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .wrap-odd {
@@ -407,13 +405,6 @@ section div {
 .svg {
   -webkit-animation: y var(--y-speed) linear infinite alternate;
           animation: y var(--y-speed) linear infinite alternate;
-  width: var(--width);
-  height: var(--width);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.svg path {
   width: var(--width);
   height: var(--width);
 }

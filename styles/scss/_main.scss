@@ -3,7 +3,8 @@
     --x-speed: 13s;
     --y-speed: 7s;
     --transition-speed: 2.2s;
-    --animation-left: 800px;
+    --wrap-left: 20px;
+    --wrap-right: 20px;
 }
 
 section {
@@ -75,69 +76,44 @@ section {
 }
 
 
-
-
 $green: #7ceaa4;
 $purple: #3b3d54;
 
 
-
 .svg-wrap{
     width: var(--width);
+    box-sizing: border-box;
 }
 
-.wrap-1, .wrap-3, .wrap-5, .wrap-7{
+.wrap-odd{
     animation: x1 var(--x-speed) linear infinite alternate;
     position: absolute;
+    left: var(--wrap-left)
 }
 
-.wrap-3{
-    animation: 20s
-}
-
-.wrap-2, .wrap-4, .wrap-6, .wrap-6, .wrap-8 {
+.wrap-even {
     animation: x2 var(--x-speed) linear infinite alternate;
     position: absolute;
-}
-
-.wrap-1{
-  top: 0;
-  left:0;
-}
-.wrap-2{
-    top: 0;
-    right:0;
-}
-.wrap-3{
-    top: 20px;
-    left:20px
-}
-.wrap-4{
-    top: 20px;
-    right:20px
-}
-.wrap-5{
-    top: 40px;
-    left:40px;
-}
-.wrap-6{
-    top: 40px;
-    right:40px;
-}
-.wrap-7{
-    top:60px;
-    left:60px;
-}
-.wrap-8{
-    top: 60px;
-    right:60px;
+    right: var(--wrap-right);
 }
 
 .svg{
     animation: y var(--y-speed) linear infinite alternate;
     width: var(--width);
     height: var(--width);
+    box-sizing: border-box;
 }
+
+.svg path {
+    width: var(--width);
+    height: var(--width);
+}
+
+.svg g {
+    width: var(--width);
+    height: var(--width);
+}
+
 
 @keyframes x1 {
     100% {
