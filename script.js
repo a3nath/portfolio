@@ -143,15 +143,19 @@
 //   changeSpeed = e.target.value;
 // })
 
+// function rotate (el) {
+//     el.setAttribute('transform', "rotate(45")
+// }
 
-let svgs = document.querySelectorAll('.svg')
-svgs.forEach(svg => svg.style.setProperty('--y-speed', Math.min(Math.max(Math.random() * 10,2), 5) +'s'))
+// let svgs = document.querySelector('.svg')
+// svgs.forEach(svg => svg.addEventListener('onclick', console.log('here')))
+// svgs.forEach(svg => svg.style.setProperty('--y-speed', Math.min(Math.max(Math.random() * 10,2), 5) +'s'))
 
-let wrapOdd = document.querySelectorAll('.wrap-odd')
-wrapOdd.forEach(wrap => wrap.style.setProperty('--wrap-left',  Math.min(Math.max(Math.random() * 100,20), 80) +'px'))
+// let wrapOdd = document.querySelectorAll('.wrap-odd')
+// wrapOdd.forEach(wrap => wrap.style.setProperty('--wrap-left',  Math.min(Math.max(Math.random() * 100,20), 80) +'px'))
 
-let wrapEven = document.querySelectorAll('.wrap-even')
-wrapEven.forEach(wrap => wrap.style.setProperty('--wrap-right',  Math.min(Math.max(Math.random() * 100,20), 80) +'px'))
+// let wrapEven = document.querySelectorAll('.wrap-even')
+// wrapEven.forEach(wrap => wrap.style.setProperty('--wrap-right',  Math.min(Math.max(Math.random() * 100,20), 80) +'px'))
 
 
 

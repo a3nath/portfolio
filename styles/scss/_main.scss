@@ -26,20 +26,20 @@ section {
     }
 }
 
-.giraffe-facts-section {
-    div {
+// .giraffe-facts-section {
+//     div {
 
-        p, 
-        div {
-                width: 50%;
-            }
+//         p, 
+//         div {
+//                 width: 50%;
+//             }
 
-        p {
-            margin-left: 10px;
-        }
+//         p {
+//             margin-left: 10px;
+//         }
 
-    }
-}
+//     }
+// }
 
 .gallery {
     div {
@@ -64,15 +64,16 @@ section {
         padding: 10px 0;
     }
 
-    #{$anchorTagHoverFocus} {
-        color: $primaryAccent;
-    }
+    // #{$anchorTagHoverFocus} {
+    //     color: $primaryAccent;
+    // }
 }
 
 .cover{
-    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    background: radial-gradient(ellipse at bottom, #161940 0%, #090a1a 100%);
     height: 800px;
     position: relative;
+    // background-color: #090a1a;
 }
 
 
@@ -91,10 +92,19 @@ $purple: #3b3d54;
     left: var(--wrap-left)
 }
 
-.wrap-even {
-    animation: x2 var(--x-speed) linear infinite alternate;
+// .wrap-even {
+//     animation: x2 var(--x-speed) linear infinite alternate;
+//     position: absolute;
+//     right: var(--wrap-right);
+// }
+
+.bio{
+    background: #f6ebdc;
+    color: #333;
     position: absolute;
-    right: var(--wrap-right);
+    z-index: 100;
+    top: 20vh;
+    left: 5vw;
 }
 
 .svg{
@@ -104,54 +114,38 @@ $purple: #3b3d54;
     box-sizing: border-box;
 }
 
-.svg path {
-    width: var(--width);
-    height: var(--width);
-}
+// .svg path {
+//     width: var(--width);
+//     height: var(--width);
+// }
 
-.svg g {
-    width: var(--width);
-    height: var(--width);
-}
+// .svg g {
+//     width: var(--width);
+//     height: var(--width);
+// }
 
+.projects{
+    background-color: #090a1a;
+    height: 800px;
+}
 
 @keyframes x1 {
     100% {
         transform: translateX(calc(100vw - var(--width)));
     }
-  }
-  @keyframes x2 {
-    // 0% {
-    //     transform: translateX(0);
-    // };
-    100% {
-      transform: translateX(calc(-90vw + var(--width)));
-    }
-  }
-  @keyframes y {
-    100% {
-        transform: translateY(calc(700px - var(--width)));
-    }
-  }
+}
 
-
-// $total: 10;
-// @for $i from 1 through $total {
-// 	$scale:random(2) - .4;
-	
-// 	.svg:nth-child(#{$i}){
-// 		animation: raise#{$i} 6 + random(15) +s linear infinite;
-// 		animation-delay:random(5) - 5 + s;
-// 		transform: scale(.3 * $i - .6) rotate(random(360) + deg);
-// 		z-index: $i - 7;
-// 		filter: blur($i - 6 + px);
-
-// 	  @keyframes raise#{$i} {
-// 		  to{
-// 			 bottom:150vh;
-// 			 transform: scale(.3 * $i - .6) rotate(random(360) + deg);
-// 			}
-// 		}
-// 	}
-// }
-
+//   @keyframes x2 {
+//     // 0% {
+//     //     transform: translateX(0);
+//     // };
+//     100% {
+//       transform: translateX(calc(-90vw + var(--width)));
+//     }
+//   }
+//   @keyframes y {
+//     100% {
+//         transform: translateY(calc(700px - var(--width)));
+//         // bottom: 0;
+//     }
+//   }

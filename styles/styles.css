@@ -261,10 +261,6 @@ a {
 body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.6;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(./images/giraffePattern.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./images/giraffePattern.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 h1,
@@ -309,7 +305,7 @@ body {
 }
 
 :root {
-  --width: 60px;
+  --width: 50px;
   --x-speed: 13s;
   --y-speed: 7s;
   --transition-speed: 2.2s;
@@ -340,15 +336,6 @@ section div {
       justify-content: space-around;
 }
 
-.giraffe-facts-section div p,
-.giraffe-facts-section div div {
-  width: 50%;
-}
-
-.giraffe-facts-section div p {
-  margin-left: 10px;
-}
-
 .gallery div {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -374,18 +361,16 @@ section div {
   padding: 10px 0;
 }
 
-.links a:focus, .links a:hover {
-  color: #1FB31F;
-}
-
 .cover {
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  background: radial-gradient(ellipse at bottom, #161940 0%, #090a1a 100%);
   height: 800px;
   position: relative;
 }
 
 .svg-wrap {
   width: var(--width);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .wrap-odd {
@@ -395,11 +380,13 @@ section div {
   left: var(--wrap-left);
 }
 
-.wrap-even {
-  -webkit-animation: x2 var(--x-speed) linear infinite alternate;
-          animation: x2 var(--x-speed) linear infinite alternate;
+.bio {
+  background: #f6ebdc;
+  color: #333;
   position: absolute;
-  right: var(--wrap-right);
+  z-index: 100;
+  top: 20vh;
+  left: 5vw;
 }
 
 .svg {
@@ -407,11 +394,13 @@ section div {
           animation: y var(--y-speed) linear infinite alternate;
   width: var(--width);
   height: var(--width);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.svg g {
-  width: var(--width);
-  height: var(--width);
+.projects {
+  background-color: #090a1a;
+  height: 800px;
 }
 
 @-webkit-keyframes x1 {
@@ -425,34 +414,6 @@ section div {
   100% {
     -webkit-transform: translateX(calc(100vw - var(--width)));
             transform: translateX(calc(100vw - var(--width)));
-  }
-}
-
-@-webkit-keyframes x2 {
-  100% {
-    -webkit-transform: translateX(calc(-90vw + var(--width)));
-            transform: translateX(calc(-90vw + var(--width)));
-  }
-}
-
-@keyframes x2 {
-  100% {
-    -webkit-transform: translateX(calc(-90vw + var(--width)));
-            transform: translateX(calc(-90vw + var(--width)));
-  }
-}
-
-@-webkit-keyframes y {
-  100% {
-    -webkit-transform: translateY(calc(700px - var(--width)));
-            transform: translateY(calc(700px - var(--width)));
-  }
-}
-
-@keyframes y {
-  100% {
-    -webkit-transform: translateY(calc(700px - var(--width)));
-            transform: translateY(calc(700px - var(--width)));
   }
 }
 
@@ -479,4 +440,3 @@ footer a {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/*# sourceMappingURL=styles.css.map */
