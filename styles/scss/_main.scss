@@ -7,24 +7,24 @@
     --wrap-right: 20px;
 }
 
-section {
-    &.wrapper {
-        margin: 60px auto;
-    }
+// section {
+//     &.wrapper {
+//         margin: 60px auto;
+//     }
 
-    h3 {
-        text-align: center;
-        @include fontSize(45);
-        text-transform: capitalize;
-        margin: 0 0 30px 0;
-    }
+//     h3 {
+//         text-align: center;
+//         @include fontSize(45);
+//         text-transform: capitalize;
+//         margin: 0 0 30px 0;
+//     }
 
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-}
+//     div {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-around;
+//     }
+// }
 
 // .giraffe-facts-section {
 //     div {
