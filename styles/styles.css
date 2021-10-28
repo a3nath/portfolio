@@ -373,13 +373,6 @@ section div {
           box-sizing: border-box;
 }
 
-.wrap-odd {
-  -webkit-animation: x1 var(--x-speed) linear infinite alternate;
-          animation: x1 var(--x-speed) linear infinite alternate;
-  position: absolute;
-  left: var(--wrap-left);
-}
-
 .bio {
   background: #f6ebdc;
   color: #333;
@@ -390,30 +383,28 @@ section div {
 }
 
 .svg {
-  -webkit-animation: y var(--y-speed) linear infinite alternate;
-          animation: y var(--y-speed) linear infinite alternate;
   width: var(--width);
   height: var(--width);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-animation: spin 8s linear infinite;
+          animation: spin 8s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 10%;
 }
 
-.projects {
-  background-color: #090a1a;
-  height: 800px;
-}
-
-@-webkit-keyframes x1 {
+@-webkit-keyframes spin {
   100% {
-    -webkit-transform: translateX(calc(100vw - var(--width)));
-            transform: translateX(calc(100vw - var(--width)));
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
-@keyframes x1 {
+@keyframes spin {
   100% {
-    -webkit-transform: translateX(calc(100vw - var(--width)));
-            transform: translateX(calc(100vw - var(--width)));
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 

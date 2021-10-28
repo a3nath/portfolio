@@ -86,11 +86,12 @@ $purple: #3b3d54;
     box-sizing: border-box;
 }
 
-.wrap-odd{
-    animation: x1 var(--x-speed) linear infinite alternate;
-    position: absolute;
-    left: var(--wrap-left)
-}
+// .wrap-odd{
+//     animation: x1 var(--x-speed) linear infinite alternate;
+//     position: absolute;
+//     left: var(--wrap-left)
+//     
+// }
 
 // .wrap-even {
 //     animation: x2 var(--x-speed) linear infinite alternate;
@@ -108,10 +109,16 @@ $purple: #3b3d54;
 }
 
 .svg{
-    animation: y var(--y-speed) linear infinite alternate;
-    width: var(--width);
+       width: var(--width);
     height: var(--width);
     box-sizing: border-box;
+    animation: spin 8s linear infinite;
+    position: absolute;
+    //need to randomize
+    top: 50%;
+    left: 10%;
+    // left: var(--wrap-left)
+    // animation: y var(--y-speed) linear infinite alternate;
 }
 
 // .svg path {
@@ -124,16 +131,20 @@ $purple: #3b3d54;
 //     height: var(--width);
 // }
 
-.projects{
-    background-color: #090a1a;
-    height: 800px;
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg)
+        }
 }
 
-@keyframes x1 {
-    100% {
-        transform: translateX(calc(100vw - var(--width)));
-    }
-}
+// @keyframes x1 {
+//     100% {
+        
+//         transform: translateX(calc(100vw - var(--width)));
+//     }
+// }
 
 //   @keyframes x2 {
 //     // 0% {
