@@ -100,8 +100,8 @@ $purple: #3b3d54;
 // }
 
 .bio{
-    background: #f6ebdc;
-    color: #333;
+    // background: #f6ebdc;
+    color: #fff;
     position: absolute;
     z-index: 100;
     top: 20vh;
@@ -117,6 +117,7 @@ $purple: #3b3d54;
     //need to randomize
     top: 50%;
     left: 10%;
+    border: solid red;
     // left: var(--wrap-left)
     // animation: y var(--y-speed) linear infinite alternate;
 }

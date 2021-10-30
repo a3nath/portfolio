@@ -351,8 +351,7 @@ body {
 }
 
 .bio {
-  background: #f6ebdc;
-  color: #333;
+  color: #fff;
   position: absolute;
   z-index: 100;
   top: 20vh;
@@ -369,6 +368,7 @@ body {
   position: absolute;
   top: 50%;
   left: 10%;
+  border: solid red;
 }
 
 @-webkit-keyframes spin {
