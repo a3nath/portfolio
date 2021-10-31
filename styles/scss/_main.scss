@@ -99,13 +99,16 @@ $purple: #3b3d54;
 //     right: var(--wrap-right);
 // }
 
-.bio{
+.bio-container{
     // background: #f6ebdc;
     color: #fff;
     position: absolute;
     z-index: 100;
     top: 20vh;
     left: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .svg{
@@ -117,7 +120,6 @@ $purple: #3b3d54;
     //need to randomize
     top: 50%;
     left: 10%;
-    border: solid red;
     // left: var(--wrap-left)
     // animation: y var(--y-speed) linear infinite alternate;
 }
@@ -161,3 +163,20 @@ $purple: #3b3d54;
 //         // bottom: 0;
 //     }
 //   }
+
+// fonts
+
+.bio-text{
+    margin-top: 10px;
+}
+
+.bio-p{
+    padding-right: 25px;
+    width: 75%;
+    left:0;
+}
+
+.bio-img{
+    border-radius: 50%;
+    width: 400px;
+}

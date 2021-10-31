@@ -350,12 +350,21 @@ body {
           box-sizing: border-box;
 }
 
-.bio {
+.bio-container {
   color: #fff;
   position: absolute;
   z-index: 100;
   top: 20vh;
   left: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .svg {
@@ -368,7 +377,6 @@ body {
   position: absolute;
   top: 50%;
   left: 10%;
-  border: solid red;
 }
 
 @-webkit-keyframes spin {
@@ -383,6 +391,21 @@ body {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.bio-text {
+  margin-top: 10px;
+}
+
+.bio-p {
+  padding-right: 25px;
+  width: 75%;
+  left: 0;
+}
+
+.bio-img {
+  border-radius: 50%;
+  width: 400px;
 }
 
 footer {
