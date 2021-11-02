@@ -263,12 +263,6 @@ body {
   line-height: 1.6;
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'Poppins', sans-serif;
-}
-
 em {
   font-weight: lighter;
   font-style: italic;
@@ -289,8 +283,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1020px;
-  width: 65%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -340,7 +333,7 @@ body {
 
 .cover {
   background: radial-gradient(ellipse at bottom, #161940 0%, #090a1a 100%);
-  height: 90vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -362,52 +355,52 @@ body {
 
 .wrap-react .svg {
   left: 13%;
-  top: 20%;
+  top: 15%;
 }
 
 .wrap-css .svg {
   left: 8%;
-  top: 30%;
+  top: 25%;
 }
 
 .wrap-node .svg {
   left: 5%;
-  top: 40%;
+  top: 35%;
 }
 
 .wrap-sass .svg {
   left: 8%;
-  top: 50%;
+  top: 45%;
 }
 
 .wrap-redux .svg {
   left: 13%;
-  top: 60%;
+  top: 55%;
 }
 
 .wrap-python .svg {
   right: 13%;
-  top: 20%;
+  top: 15%;
 }
 
 .wrap-db .svg {
   right: 8%;
-  top: 30%;
+  top: 25%;
 }
 
 .wrap-jquery .svg {
   right: 5%;
-  top: 40%;
+  top: 35%;
 }
 
 .wrap-github .svg {
   right: 8%;
-  top: 50%;
+  top: 45%;
 }
 
 .wrap-netlify .svg {
   right: 13%;
-  top: 60%;
+  top: 55%;
 }
 
 @-webkit-keyframes spin {
@@ -442,11 +435,14 @@ body {
 }
 
 .bio-greet {
-  margin-bottom: 25px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 2.4rem;
 }
 
-.bio-text {
-  margin-top: 10px;
+.bio-name {
+  font-family: 'Nunito', serif;
+  font-size: 6.4rem;
+  margin: 15px 0 20px 0;
 }
 
 .bio-about {
@@ -458,6 +454,21 @@ body {
 .bio-img {
   border-radius: 50%;
   width: 400px;
+  margin-right: 600px;
+}
+
+.projects {
+  margin: 60px 0;
+}
+
+.project {
+  margin: 20px 0;
+}
+
+.projImg {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
 }
 
 footer {
