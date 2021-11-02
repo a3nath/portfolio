@@ -340,7 +340,7 @@ body {
 
 .cover {
   background: radial-gradient(ellipse at bottom, #161940 0%, #090a1a 100%);
-  height: 800px;
+  height: 90vh;
   position: relative;
 }
 
@@ -355,7 +355,7 @@ body {
   position: absolute;
   z-index: 100;
   top: 20vh;
-  left: 5vw;
+  left: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,6 +367,23 @@ body {
           align-items: center;
 }
 
+.wrap-up .svg {
+  left: 400px;
+  top: 15%;
+}
+
+.wrap-down .svg {
+  left: 800px;
+}
+
+.wrap-charm .svg {
+  top: 50%;
+}
+
+.wrap-strange .svg {
+  top: 80%;
+}
+
 .svg {
   width: var(--width);
   height: var(--width);
@@ -375,8 +392,6 @@ body {
   -webkit-animation: spin 8s linear infinite;
           animation: spin 8s linear infinite;
   position: absolute;
-  top: 50%;
-  left: 10%;
 }
 
 @-webkit-keyframes spin {
@@ -393,11 +408,15 @@ body {
   }
 }
 
+.bio-greet {
+  margin-bottom: 25px;
+}
+
 .bio-text {
   margin-top: 10px;
 }
 
-.bio-p {
+.bio-about {
   padding-right: 25px;
   width: 75%;
   left: 0;
