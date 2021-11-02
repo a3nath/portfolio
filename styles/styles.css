@@ -350,6 +350,80 @@ body {
           box-sizing: border-box;
 }
 
+.svg {
+  width: var(--width);
+  height: var(--width);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-animation: spin 8s linear infinite;
+          animation: spin 8s linear infinite;
+  position: absolute;
+}
+
+.wrap-react .svg {
+  left: 13%;
+  top: 20%;
+}
+
+.wrap-css .svg {
+  left: 8%;
+  top: 30%;
+}
+
+.wrap-node .svg {
+  left: 5%;
+  top: 40%;
+}
+
+.wrap-sass .svg {
+  left: 8%;
+  top: 50%;
+}
+
+.wrap-redux .svg {
+  left: 13%;
+  top: 60%;
+}
+
+.wrap-python .svg {
+  right: 13%;
+  top: 20%;
+}
+
+.wrap-db .svg {
+  right: 8%;
+  top: 30%;
+}
+
+.wrap-jquery .svg {
+  right: 5%;
+  top: 40%;
+}
+
+.wrap-github .svg {
+  right: 8%;
+  top: 50%;
+}
+
+.wrap-netlify .svg {
+  right: 13%;
+  top: 60%;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .bio-container {
   color: #fff;
   position: absolute;
@@ -365,47 +439,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.wrap-up .svg {
-  left: 400px;
-  top: 15%;
-}
-
-.wrap-down .svg {
-  left: 800px;
-}
-
-.wrap-charm .svg {
-  top: 50%;
-}
-
-.wrap-strange .svg {
-  top: 80%;
-}
-
-.svg {
-  width: var(--width);
-  height: var(--width);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-animation: spin 8s linear infinite;
-          animation: spin 8s linear infinite;
-  position: absolute;
-}
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 .bio-greet {

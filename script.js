@@ -147,24 +147,24 @@
 //     el.setAttribute('transform', "rotate(45")
 // }
 
-let svgs = document.querySelectorAll('.svg')
+// let svgs = document.querySelectorAll('.svg')
 
-let wrapUp = document.querySelectorAll('.wrap-up .svg')
-let wrapDown = document.querySelectorAll('.wrap-down .svg')
-let wrapCharm = document.querySelectorAll('.wrap-charm .svg')
-let wrapStrange = document.querySelectorAll('.wrap-strange .svg')
+// let wrapUp = document.querySelectorAll('.wrap-up .svg')
+// let wrapDown = document.querySelectorAll('.wrap-down .svg')
+// let wrapCharm = document.querySelectorAll('.wrap-charm .svg')
+// let wrapStrange = document.querySelectorAll('.wrap-strange .svg')
 
-wrapUp.forEach(svg => svg.style.setProperty('top', Math.max(Math.random() * 90,40) +'%'))
-wrapUp.forEach(svg => svg.style.setProperty('left', Math.random() * 90 +'%'))
+// wrapUp.forEach(svg => svg.style.setProperty('top', Math.max(Math.random() * 90,40) +'%'))
+// wrapUp.forEach(svg => svg.style.setProperty('left', Math.random() * 90 +'%'))
 
-wrapDown.forEach(svg => svg.style.setProperty('top', Math.max(Math.random() * 90, 70) +'%'))
-wrapDown.forEach(svg => svg.style.setProperty('left', Math.random() * 90 +'%'))
+// wrapDown.forEach(svg => svg.style.setProperty('top', Math.max(Math.random() * 90, 70) +'%'))
+// wrapDown.forEach(svg => svg.style.setProperty('left', Math.random() * 90 +'%'))
 
-wrapCharm.forEach(svg => svg.style.setProperty('top', Math.random() * 5 +'%'))
-wrapCharm.forEach(svg => svg.style.setProperty('left', Math.random() * 90 +'%'))
+// wrapCharm.forEach(svg => svg.style.setProperty('top', Math.random() * 5 +'%'))
+// wrapCharm.forEach(svg => svg.style.setProperty('left', Math.random() * 90 +'%'))
 
-wrapStrange.forEach(svg => svg.style.setProperty('top', Math.random() * 85 +'%'))
-wrapStrange.forEach(svg => svg.style.setProperty('left', Math.random() * 90 +'%'))
+// wrapStrange.forEach(svg => svg.style.setProperty('top', Math.random() * 85 +'%'))
+// wrapStrange.forEach(svg => svg.style.setProperty('left', Math.random() * 90 +'%'))
 
 // svgs.forEach(svg => svg.addEventListener('click', console.log('here')))
 // svgs.forEach(svg => svg.style.setProperty('left', Math.random() * 90 +'%'))
