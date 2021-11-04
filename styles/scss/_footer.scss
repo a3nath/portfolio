@@ -1,7 +1,7 @@
 footer {
     @include flexCenter();
     flex-direction: column;
-    background: $navFooterBackground;
+    background-color: #090a1a;
     color: $primaryWhite;
     padding: 10px 0;
 
