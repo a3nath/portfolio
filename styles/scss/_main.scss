@@ -7,6 +7,12 @@
     --wrap-right: 20px;
 }
 
+body{
+    background: linear-gradient(#161940 , #090a1a);
+    color: #fff
+
+}
+
 // section {
 //     &.wrapper {
 //         margin: 60px auto;
@@ -68,7 +74,6 @@
 // }
 
 .cover{
-    background: radial-gradient(ellipse at bottom, #161940 0%, #090a1a 100%);
     height: 100vh;
     position: relative;
     // background-color: #090a1a;
@@ -201,12 +206,22 @@ $purple: #3b3d54;
 }
 
 .project{
-    margin: 20px 0;
+    margin: 150px 0;
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+.project-text{
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    padding:40px 10px;
 }
 
 .projImg{
-    width: 300px;
-    height:200px;
+    width: 400px;
+    height:250px;
     border-radius: 5px;
 }
 
