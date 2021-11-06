@@ -41,31 +41,31 @@
 //     }
 // }
 
-.gallery {
-    div {
-        flex-wrap: wrap;
+// .gallery {
+//     div {
+//         flex-wrap: wrap;
 
-        div {
-            width: 250px;
-            margin: 10px;
-        }
-    }
-}
+//         div {
+//             width: 250px;
+//             margin: 10px;
+//         }
+//     }
+// }
 
-.links {
-    div {
-        display: flex;
-        flex-wrap: wrap;
-    }
+// .links {
+//     div {
+//         display: flex;
+//         flex-wrap: wrap;
+//     }
 
-    a {
-        @include fontSize(20);
-        display: inline-block;
-        padding: 10px 0;
-    }
+//     a {
+//         @include fontSize(20);
+//         display: inline-block;
+//         padding: 10px 0;
+//     }
 
 
-}
+// }
 
 .cover{
     background: radial-gradient(ellipse at bottom, #161940 0%, #090a1a 100%);
@@ -83,20 +83,6 @@ $purple: #3b3d54;
     width: var(--width);
     box-sizing: border-box;
 }
-
-// .wrap-odd{
-//     animation: x1 var(--x-speed) linear infinite alternate;
-//     position: absolute;
-//     left: var(--wrap-left)
-//     
-// }
-
-// .wrap-even {
-//     animation: x2 var(--x-speed) linear infinite alternate;
-//     position: absolute;
-//     right: var(--wrap-right);
-// }
-
 
 
 .svg{
@@ -154,6 +140,78 @@ $purple: #3b3d54;
     top: 55%;
 }
 
+
+
+
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg)
+        }
+}
+
+
+// fonts
+
+.wrapper{
+    width:80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bio-container{
+    // background: #f6ebdc;
+    color: #fff;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+
+.bio-greet{
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 2.4rem;
+}
+
+.bio-name{
+    font-family: 'Nunito', serif;
+    font-size: 6.4rem;
+    margin:15px 0 20px 0;
+}
+
+
+.bio-about{
+    padding-right: 25px;
+    width: 75%;
+    left:0;
+}
+
+.bio-img{
+    border-radius: 50%;
+    width: 400px;
+    margin-right: 15%;
+}
+
+.projects{
+    margin: 60px 0;
+    left: 15%;
+}
+
+.project{
+    margin: 20px 0;
+}
+
+.projImg{
+    width: 300px;
+    height:200px;
+    border-radius: 5px;
+}
+
+
+
 // .wrap-up .svg{
 //     left: 400px;
 //     // top:15%;
@@ -184,12 +242,6 @@ $purple: #3b3d54;
 
 
 
-@keyframes spin {
-    100% {
-        transform: rotate(360deg)
-        }
-}
-
 // @keyframes x1 {
 //     100% {
         
@@ -211,57 +263,3 @@ $purple: #3b3d54;
 //         // bottom: 0;
 //     }
 //   }
-
-// fonts
-
-.bio-container{
-    // background: #f6ebdc;
-    color: #fff;
-    position: absolute;
-    z-index: 100;
-    top: 20vh;
-    left: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.bio-greet{
-    font-family: 'Zen Kurenaido', sans-serif;
-    font-size: 2.4rem;
-}
-
-.bio-name{
-    font-family: 'Nunito', serif;
-    font-size: 6.4rem;
-    margin:15px 0 20px 0;
-}
-
-
-.bio-about{
-    padding-right: 25px;
-    width: 75%;
-    left:0;
-}
-
-.bio-img{
-    border-radius: 50%;
-    width: 400px;
-    margin-right: 600px;
-}
-
-.projects{
-    margin: 60px 0;
-    left: 15%;
-}
-
-.project{
-    margin: 20px 0;
-}
-
-.projImg{
-    width: 300px;
-    height:200px;
-    border-radius: 5px;
-}
