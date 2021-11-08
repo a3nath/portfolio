@@ -74,7 +74,7 @@ body{
 // }
 
 .cover{
-    height: 100vh;
+    height: 90vh;
     position: relative;
     // background-color: #090a1a;
 }
@@ -214,7 +214,6 @@ $purple: #3b3d54;
 
 .project-text{
     width: 50%;
-    margin: 0 auto;
     text-align: left;
     padding:40px 10px;
 }
@@ -225,6 +224,10 @@ $purple: #3b3d54;
     border-radius: 5px;
 }
 
+h1{
+    font-family: 'Nunito', serif;
+    font-size: 4rem;
+}
 
 
 // .wrap-up .svg{
