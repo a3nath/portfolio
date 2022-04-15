@@ -75,8 +75,8 @@ body{
 
 .cover{
     height: 90vh;
-    position: relative;
-    // background-color: #090a1a;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -168,11 +168,9 @@ $purple: #3b3d54;
 .bio-container{
     // background: #f6ebdc;
     color: #fff;
-    top: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 200px;
 }
 
 
